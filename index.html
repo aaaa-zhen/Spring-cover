@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+       body{
+
+        margin: 0;
+        padding: 0;
+        background: #ffffff;
+       }
+       .container{
+         width: 800px;
+         height: 200px;
+         background-color: rgb(4, 4, 4);
+       }
+
+       .ball{   
+        position: absolute;
+        top: 50px;
+        left: 0px;
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        border-radius: 50%;
+       }
+       .range{
+        top: 200px;
+        height: 120px;
+        width: 500px;
+        padding: 20px;         
+       }
+       input{
+            width: 100%;
+            height: 40px;
+        
+        }
+        .button{
+            width: 80px;
+            height: 40px;
+            position: absolute;
+            left: 650px;
+            top: 20px;
+            color: white;
+            background-color: rgb(30, 111, 253);
+            border: none;
+            border-radius: 5px;
+        }
+        .duration{
+            position: absolute;
+            top: 140px;
+            left: 50px;
+           
+        
+        }
+        h1{
+            font-size: 22px;
+            color: white;
+        }
+        
+    </style>
+
+
+</head>
+<body>
+
+            <div class="container"> 
+
+                <button class="button">Refresh</button>
+
+            </div>
+            <div class="ball"></div>
+
+            <div class="range">
+
+                <div>
+                    <h2> Android Spring</h2>
+                </div>
+                <div class="stiffness">
+                    <input id="stiffnessSlider" type="range" min="0" max="1000">
+                    <span>0</span>
+                    <p1>Stiffness</p1>
+                </div>
+                
+                <div class="damping">
+                    <input id="dampingSlider" type="range" min="0" max="10" step="1">
+                    <span>0.0</span>
+                    <p1>Damping Ratio</p1>
+                </div>
+
+                <div><h2>Protopie Spring</h2></div>
+
+
+                <div class="tension">
+                    <input id="tensionSlider" type="range" min="0" max="1000">
+                    <span>0.0</span>
+                    <p1>Tension</p1>
+                </div>  
+
+                
+                <div class="friction">
+                    <input id="frictionSlider" type="range" min="0" max="100">
+                    <span>0.0</span>
+                    <p1>friction</p1>
+                </div>
+                
+                  
+                
+        
+           </div>   
+
+           <div class="time">
+
+            <h1 id="durationText" class="duration">时长：</h1>
+
+           </div>
+    
+            <script src="spring.js"></script>
+            
+            
+
+    
+</body>
+</html>
